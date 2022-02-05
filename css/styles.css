@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('../fonts/Poppins-Medium.ttf') format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Poppins;
+}
+div {
+    padding: 40px 0;
+}
+.nav, #part-1, #part-3, footer {
+    background: rgb(46,2,66);
+    background: linear-gradient(90deg, rgba(46,2,66,1) 0%, rgba(146,2,154,1) 61%);
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(173, 237, 241);
+}
+.img-wrapper {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+img {
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+}
+.nav {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav h3 {
+    margin: 0 10px;
+}
+.nav ul {
+    display: none;
+}
+@media screen and (min-width: 400px) {
+    .nav ul {
+        display: block;
+        list-style-type: none;
+        font-family: PoppinsMedium;
+        margin-left: 30px;
+    }
+}
+
+.nav ul li {
+    display: inline;
+    margin-left: 10px;
+}
+.personal div {
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (min-width: 450px) {
+    .personal {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+.presentation {
+    line-height: 2.3rem;
+}
+
+.personal p {
+    color: #570266;
+    margin-top: 15px;
+}
+.subtitle span {
+    float: right;
+    font-weight: normal;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+.title {
+    font-family: PoppinsMedium;
+    font-weight: 800;
+    margin-bottom: 23px;
+}
+p.subtitle {
+    font-weight: bold;
+}
+#part-1 ul {
+    margin-left: 40px;
+    font-size: 0.8em;
+}
+#part-2 .title, #part-4 .title {
+    color: #570266;
+}
+.desc {
+    padding: 0;
+}
+.desc p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+}
+#part-3 .desc p {
+    font-weight: normal;
+}
+footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 140px;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+footer div {
+    width: 30%;
+    margin-left: 10px;
+}
+footer a i {
+    margin-right: 5px;
+}
